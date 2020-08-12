@@ -10,7 +10,7 @@
 </head>
 <body>
   <div id="root" v-cloak class="app">
-    <button @click="createGraph">生成图</button>
+    <button @click="createGraph">创建图</button>
     <button @click="dijkstra('auto')" :disabled="searching">自动执行</button>
     <button @click="searching ? next() : dijkstra('manul')">手动执行 - {{ searching ? '下一步' : '开始'}}</button>
     <textarea class="graph_define" v-model="graph_define"></textarea>
